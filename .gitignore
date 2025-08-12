@@ -1,0 +1,29 @@
+# Node modules (dependency cache - never commit!)
+node_modules/
+
+# Environment variables file (must NEVER be in Git)
+.env
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+
+# OS and editor temp files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Application build and coverage output
+dist/
+build/
+coverage/
+
+# IDE settings (examples)
+.vscode/
+.idea/
+*.iml
+
+# Optional: ignore test snapshots, if using Jest
+__snapshots__/

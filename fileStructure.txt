@@ -1,0 +1,39 @@
+/your-auth-api
+│
+├── src/
+│   ├── controllers/
+│   │   ├── authController.js          // Register, login, social callbacks
+│   │   └── userController.js          // User profile, admin operations
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js          // JWT authentication verifier
+│   │   └── roleMiddleware.js          // Role-based access control
+│   │
+│   ├── models/
+│   │   └── userModel.js               // User schema (DB or in-memory)
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js              // Endpoints: /register, /login, /auth/google
+│   │   └── userRoutes.js              // Endpoints: /profile, /admin-only
+│   │
+│   ├── config/
+│   │   └── passport.js                // Passport config for Google OAuth
+│   │   └── db.js                      // DB connection setup (if using DB)
+│   │
+│   ├── utils/
+│   │   └── validator.js               // Validation helpers
+│   │
+│   ├── app.js                         // Main app entry point
+│   └── server.js                      // Server startup/port listener
+│
+├── docs/
+│   ├── API.md                         // API documentation
+│   └── SocialLogin.md                 // Social login setup guides
+│
+├── test/
+│   └── auth.test.js                   // Unit/Integration tests
+│
+├── .env                               // Environment variables (JWT secret, OAuth keys)
+├── .gitignore                         // Ignore node_modules, .env, etc.
+├── package.json                       // Dependencies and scripts
+└── README.md                          // Project overview, setup, usage
