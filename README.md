@@ -1,40 +1,39 @@
-/full-auth-api
-│
-├── src/
-│   ├── controllers/
-│   │   ├── authController.js          // Register, login, social callbacks
-│   │   └── userController.js          // User profile, admin operations
-│   │
-│   ├── middleware/
-│   │   ├── authMiddleware.js          // JWT authentication verifier
-│   │   └── roleMiddleware.js          // Role-based access control
-│   │
-│   ├── models/
-│   │   └── userModel.js               // User schema (DB or in-memory)
-│   │
-│   ├── routes/
-│   │   ├── authRoutes.js              // Endpoints: /register, /login, /auth/google
-│   │   └── userRoutes.js              // Endpoints: /profile, /admin-only
-│   │
-│   ├── config/
-│   │   └── passport.js                // Passport config for Google OAuth
-│   │   └── db.js                      // DB connection setup (if using DB)
-│   │
-│   ├── utils/
-│   │   └── validator.js               // Validation helpers
-│   │
-│   ├── app.js                         // Main app entry point
-│   └── server.js                      // Server startup/port listener
-│
-├── docs/
-│   ├── API.md                         // API documentation
-│   └── SocialLogin.md                 // Social login setup guides
-│
-├── test/
-│   └── auth.test.js                   // Unit/Integration tests
-│
-├── .env                               // Environment variables (JWT secret, OAuth keys)
-├── .gitignore                         // Ignore node_modules, .env, etc.
-├── package.json                       // Dependencies and scripts
-└── README.md                          // Project overview, setup, usage
+# 🔐 Your Auth API
 
+<!-- Copy Button HTML -->
+<div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
+  <button onclick="copyReadme()" style="padding:8px 12px; background:#2d89ef; color:white; border:none; border-radius:4px; cursor:pointer;">
+    📋 Copy README
+  </button>
+</div>
+
+<script>
+function copyReadme() {
+  const text = document.getElementById('readme-content').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert('README copied to clipboard!');
+  });
+}
+</script>
+
+<pre id="readme-content">
+
+# 🔐 Your Auth API
+
+[![Node.js](https://img.shields.io/badge/Node.js-18.x-green)]()
+[![Express](https://img.shields.io/badge/Express.js-4.x-lightgrey)]()
+[![JWT](https://img.shields.io/badge/JWT-Authentication-blue)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
+
+A **Node.js & Express.js Authentication API** with **JWT security**, **role-based access control**, and **Google OAuth** support.  
+Built with a clean, modular architecture for scalability and ease of integration.
+
+---
+
+## 📂 Project Structure
+
+(your project tree...)
+
+... (rest of README content) ...
+
+</pre>
